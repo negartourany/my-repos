@@ -1,0 +1,74 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+ul {
+  list-style: none;
+  margin-left: -30px;
+  color: #2b2a2c;
+}
+.container {
+  background-color: #f9f7fe;
+  border-radius: 5px;
+  max-width: 800px;
+}
+.header {
+  text-align: center;
+  margin-left: 93px;
+}
+.butt1 {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: -110px;
+}
+.line {
+  color: rgb(177, 177, 177);
+  margin-top: 5px;
+}
+.weekday {
+  text-align: center;
+  color: #aca9b6;
+}
+.weatheremoji {
+  text-align: center;
+  font-size: 40px;
+}
+.temp {
+  text-align: center;
+}
+.mintemp {
+  color: #aca9b6;
+}
+.info {
+  text-align: center;
+}
+.cel {
+  font-size: 15px;
+  font-weight: 300;
+}
+.cel:hover {
+  text-decoration: underline;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+.farenheit {
+  font-size: 15px;
+  font-weight: 300;
+}
+.farenheit:hover {
+  text-decoration: underline;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+.spacer {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#humid {
+  margin-left: 35px;
+}
+#search {
+  width: 350px;
+}

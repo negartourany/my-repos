@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <div class="info">
+        <div class="row header">
+          <div class="col">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search"
+                  placeholder="Enter a city..."
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-info butt1" id="searchbutt">
+              Search
+            </button>
+          </div>
+        </div>
+        <hr/ class="line">
+        <div class="row">
+          <div class="col">
+            <h1 id="City">London</h1>
+            <ul>
+              <li>
+                <span class="day">Sunday</span>
+                <span class="hour">33</span>:<span class="minute">21</span>
+                , snowing
+              </li>
+              <li id="humid">Humidity: 88%, Wind: 6.4km</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>
+              🌨️ <span class="number">4</span> <span class="cel">°C</span>
+              <span class="spacer">|</span>
+              <span class="farenheit">°F</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="row weekday">
+        <div class="col">Sun</div>
+        <div class="col">Mon</div>
+        <div class="col">Tue</div>
+        <div class="col">Wed</div>
+        <div class="col">Thu</div>
+      </div>
+      <div class="row weatheremoji">
+        <div class="col">☀️</div>
+        <div class="col">☀️</div>
+        <div class="col">☀️</div>
+        <div class="col">☀️</div>
+        <div class="col">☀️</div>
+      </div>
+      <div class="row temp">
+        <div class="col">12° <span class="mintemp">10°</span></div>
+        <div class="col">12° <span class="mintemp">10°</span></div>
+        <div class="col">12° <span class="mintemp">10°</span></div>
+        <div class="col">12° <span class="mintemp">10°</span></div>
+        <div class="col">12° <span class="mintemp">10°</span></div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
