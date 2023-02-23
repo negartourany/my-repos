@@ -12,11 +12,15 @@ function show(event) {
   event.preventDefault();
   let input = document.querySelector("#search");
   let h1 = document.querySelector("#City");
+  console.log(typeof input.value);
+  let upperCase = input.value.to;
   h1.innerHTML = input.value;
+
   let cityName = input.value;
   function showtemp(response) {
     let temperature = Math.round(response.data.main.temp);
-    alert(temperature);
+    let rightTemp = document.querySelector(".number");
+    rightTemp.innerHTML = temperature;
   }
   let apiKey = "197ef3a642b76eef90e131866f74a0a0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`;
@@ -33,18 +37,8 @@ function change() {
 }
 let cel = document.querySelector(".cel");
 cel.addEventListener("click", change);
-
-function change2() {
-  let temp2 = document.querySelector(".number");
-  temp2.innerHTML = 43;
-}
-let farenheit = document.querySelector(".farenheit");
-farenheit.addEventListener("click", change2);
 ///////////////////////////////////////////////
-function showtemp(response) {
-  let temperature = Math.round(response.data.main.temp);
-  console.log(temperature);
-}
-let apiKey = "197ef3a642b76eef90e131866f74a0a0";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Paris&units=metric&appid=${apiKey}`;
-axios.get(apiUrl).then(showtemp);
+
+let test = "fuch you";
+let upper = test.toUpperCase();
+console.log(upper);
