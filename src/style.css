@@ -65,6 +65,10 @@ ul {
   font-size: 15px;
   font-weight: 300;
 }
+.footer {
+  text-align: center;
+  font-size: 12px;
+}
 
 #humid {
   margin-left: 35px;

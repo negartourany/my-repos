@@ -38,7 +38,3 @@ function change() {
 let cel = document.querySelector(".cel");
 cel.addEventListener("click", change);
 ///////////////////////////////////////////////
-
-let test = "fuch you";
-let upper = test.toUpperCase();
-console.log(upper);
