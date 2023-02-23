@@ -13,18 +13,19 @@ function show(event) {
   let input = document.querySelector("#search");
   let h1 = document.querySelector("#City");
   h1.innerHTML = input.value;
-  function showing(response) {
-    let round = Math.round(response.data.main.temp);
-    alert(round);
-  
-  let apiKey = "2513f3c728b1b5ff4f4347e1a6af22b8";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${h1.textContent}&appid=${apiKey}&&units=metric`;
-  axios.get(apiUrl).then(showing);
+  let cityName = input.value;
+  function showtemp(response) {
+    let temperature = Math.round(response.data.main.temp);
+    alert(temperature);
+  }
+  let apiKey = "197ef3a642b76eef90e131866f74a0a0";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(showtemp);
 }
 let city = document.querySelector("form");
 city.addEventListener("submit", show);
 let buttonfunction = document.querySelector("#searchbutt");
-buttonfunction.addEventListener("click", show, showing);
+buttonfunction.addEventListener("click", show);
 
 function change() {
   let temp = document.querySelector(".number");
@@ -40,9 +41,10 @@ function change2() {
 let farenheit = document.querySelector(".farenheit");
 farenheit.addEventListener("click", change2);
 ///////////////////////////////////////////////
-function showing(response) {
-  alert(response.data.main.temp);
+function showtemp(response) {
+  let temperature = Math.round(response.data.main.temp);
+  console.log(temperature);
 }
-let apiKey = "2513f3c728b1b5ff4f4347e1a6af22b8";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=paris&appid=${apiKey}&&units=metric`;
-axios.get(apiUrl).then(showing);
+let apiKey = "197ef3a642b76eef90e131866f74a0a0";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Paris&units=metric&appid=${apiKey}`;
+axios.get(apiUrl).then(showtemp);
